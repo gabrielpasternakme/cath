@@ -63,8 +63,8 @@ body {
     background: #ffdde4;
     overflow: hidden;
     display: flex;
-    justify-content: center; /* centraliza horizontal */
-    align-items: center;     /* centraliza vertical */
+    justify-content: center; 
+    align-items: center;   
     font-family: Arial;
 }
 
@@ -91,7 +91,7 @@ body {
             font-family: Arial;
         }
 
-        /* corações flutuando */
+       
         .heart {
             position: absolute;
             color: #ff2e63;
@@ -132,13 +132,12 @@ body {
     position: fixed;
     width: 220px;
     height: 220px;
-    left: calc(50% + 150px); /* mexe pra posicionar onde vc quiser */
+    left: calc(50% + 150px); 
     top: calc(50% - 110px);
 
-    /* só pra debug: se quiser ver a área, ativa */
-    /* background: rgba(255,0,0,0.2); */
+ 
 
-    overflow: hidden; /* NÃO DEIXA ELE SAIR */
+    overflow: hidden; 
     z-index: 9999;
 }
 
@@ -157,4 +156,7 @@ body {
 
     transition: left 0.25s linear, top 0.25s linear;
 }
+
+
+
 
