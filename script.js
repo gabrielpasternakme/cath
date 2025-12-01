@@ -1,5 +1,5 @@
 
-    // gerar corações aleatórios
+   
     for (let i = 0; i < 30; i++) {
         const h = document.createElement("div")
         h.className = "heart"
@@ -27,7 +27,7 @@
     btnNao.style.left = x + "px"
     btnNao.style.top = y + "px"
 
-    // diminuir
+   
     let size = parseFloat(btnNao.dataset.scale || "1")
     size -= 0.1
 
@@ -60,4 +60,7 @@
 
         document.body.appendChild(msg)
     })
+
+
+
 
