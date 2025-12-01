@@ -1,0 +1,160 @@
+.heart-box {
+    position: relative;
+    width: 300px;
+    height: 270px;
+}
+
+.heart-shape {
+    position: absolute;
+    width: 310px;
+    height: 270px;
+    background: #ff4f81;
+    transform: rotate(-45deg);
+    border-radius: 10px 60px 0 0;
+}
+
+.heart-shape::before,
+.heart-shape::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 270px;
+    background: #ff4f81;
+    border-radius: 150px;
+}
+
+.heart-shape::before {
+    top: -145px;
+    left: 0;
+}
+
+.heart-shape::after {
+    left: 145px;
+    top: 0;
+}
+
+.heart-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 200px;
+    z-index: 2;
+}
+
+.heart-text h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.heart-text button {
+    padding: 8px 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    background: #ffdde4;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* centraliza horizontal */
+    align-items: center;     /* centraliza vertical */
+    font-family: Arial;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+            margin: 0;
+            height: 100vh;
+            background: #ffdde4;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial;
+        }
+
+        /* corações flutuando */
+        .heart {
+            position: absolute;
+            color: #ff2e63;
+            font-size: 30px;
+            animation: float 6s infinite ease-in-out;
+            opacity: 0.7;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh); }
+            100% { transform: translateY(-20vh); }
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        #sim {
+            background: #ee2c63;
+            color: white;
+            z-index: 2;
+        }
+
+       #nao-area {
+    position: fixed;
+    width: 220px;
+    height: 220px;
+    left: calc(50% + 150px); /* mexe pra posicionar onde vc quiser */
+    top: calc(50% - 110px);
+
+    /* só pra debug: se quiser ver a área, ativa */
+    /* background: rgba(255,0,0,0.2); */
+
+    overflow: hidden; /* NÃO DEIXA ELE SAIR */
+    z-index: 9999;
+}
+
+#nao {
+    position: absolute;
+    left: 15px;
+    top: 125px;
+
+    background: #999;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 99999;
+
+    transition: left 0.25s linear, top 0.25s linear;
+}
+
